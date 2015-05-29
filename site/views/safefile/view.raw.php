@@ -6,7 +6,7 @@ class SafeFileViewSafeFile extends JViewLegacy {
 
   public function display($tpl = null) {
     $app = JFactory::getApplication();
-		$file = $app->input->getCmd('file');
+		$file = $app->input->getPath('file');
 		$filePath = JPATH_ROOT . '/images/dokumenty/safe/' . $file;
 
     if (!JFile::exists($filePath)) {
@@ -25,6 +25,7 @@ class SafeFileViewSafeFile extends JViewLegacy {
 		JResponse::sendHeaders();
 
 		echo JFile::read($filePath);
+		exit();
   }
 
 }
