@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+  <name>Safe File</name>
+  <creationDate>2015-05-28</creationDate>
+  <author>Ondřej Hlaváč</author>
+  <authorEmail>info@bluepro.cz</authorEmail>
+  <authorUrl>http://bluepro.cz</authorUrl>
+  <copyright>Ondřej Hlaváč</copyright>
+  <license>GNU/GPL</license>
+  <version>1.0.0</version>
+  <description>Access protected file download component.</description>
+
+  <files folder="site">
+    <filename>index.html</filename>
+    <filename>safefile.php</filename>
+    <filename>controller.php</filename>
+    <folder>views</folder>
+  </files>
+
+  <administration>
+    <menu>Safe File</menu>
+    <files folder="admin">
+      <filename>access.xml</filename>
+      <filename>config.xml</filename>
+      <filename>index.html</filename>
+      <filename>safefile.php</filename>
+      <filename>controller.php</filename>
+    	<folder>language</folder>
+      <folder>views</folder>
+    </files>
+  </administration>
+
+</extension>
